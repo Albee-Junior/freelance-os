@@ -14,7 +14,7 @@ function Layout({ children }) {
     <div className={styles.page}>
       <Header className={styles.header} handleClick={handleClick} />
       <Sidebar
-        className={`${styles.sidebar} ${isSidebarOpen && styles.open} `}
+        className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ""} `}
       />
       <main className={styles.main}>{children}</main>
     </div>

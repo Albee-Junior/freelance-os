@@ -1,11 +1,13 @@
+import styles from "./Header.module.css";
+
 function Header({ className, handleClick }) {
   return (
-    <div className={className}>
-      <h1>Header</h1>
-      <button type="button" onClick={handleClick}>
-        Open sidebar
+    <header className={className}>
+      <button type="button" className={styles.menuBtn} onClick={handleClick}>
+        ☰
       </button>
-    </div>
+      <h1>Freelance OS</h1>
+    </header>
   );
 }
 
