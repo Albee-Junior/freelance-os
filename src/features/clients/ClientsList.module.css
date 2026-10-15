@@ -1,0 +1,6 @@
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-5);
+  list-style: none;
+}
