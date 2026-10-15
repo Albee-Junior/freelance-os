@@ -1,6 +1,6 @@
-function Sidebar() {
+function Sidebar({ className }) {
   return (
-    <div>
+    <div className={className}>
       <a href="#">Dashboard</a>
       <a href="#">Clients</a>
       <a href="#">Projects</a>

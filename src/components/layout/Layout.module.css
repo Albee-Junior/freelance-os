@@ -3,15 +3,32 @@
   grid-template-areas:
     "header header"
     "sidebar main";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 70px auto;
   min-height: 100vh;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .header {
   grid-area: header;
+  background: var(--color-primary);
 }
 .sidebar {
   grid-area: sidebar;
+  background: var(--color-surface);
 }
 .main {
   grid-area: main;
+}
+@media (max-width: 768px) {
+  .page {
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    width: 0;
+  }
+  .open {
+    width: 240px;
+  }
 }
