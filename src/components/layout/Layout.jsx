@@ -1,13 +1,13 @@
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Header from "./Header.jsx";
+import Sidebar from "./Sidebar.jsx";
 import styles from "./Layout.module.css";
 
 function Layout({ children }) {
   return (
-    <div style={styles.page}>
-      <Header />
-      <Sidebar />
-      <main>{children}</main>
+    <div className={styles.page}>
+      <Header className={styles.header} />
+      <Sidebar className={styles.sidebar} />
+      <main className={styles.main}>{children}</main>
     </div>
   );
 }

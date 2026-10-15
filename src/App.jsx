@@ -1,5 +1,13 @@
+import Layout from "./components/layout/Layout.jsx";
+
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Layout>
+        <h1>Hello, World</h1>
+      </Layout>
+    </>
+  );
 }
 
 export default App;

@@ -4,4 +4,14 @@
     "header header"
     "sidebar main";
   min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.main {
+  grid-area: main;
 }
